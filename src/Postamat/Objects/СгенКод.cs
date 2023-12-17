@@ -31,10 +31,8 @@ namespace IIS.Postamat
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("СгенКодE", new string[] {
             "СгенКод as \'Сген код\'",
-            "Пользователь as \'Пользователь\'",
-            "Пользователь.ФИО as \'ФИО\'"}, Hidden=new string[] {
-            "Пользователь.ФИО"})]
-    [MasterViewDefineAttribute("СгенКодE", "Пользователь", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
+            "Пользователь.ФИО as \'ФИО\'",
+            "Пользователь.НомерТелефона as \'Номер телефона\'"})]
     [View("СгенКодL", new string[] {
             "СгенКод as \'Сген код\'",
             "Пользователь.ФИО as \'ФИО\'"})]

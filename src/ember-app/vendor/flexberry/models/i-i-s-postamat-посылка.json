@@ -149,6 +149,27 @@
           "name": "логистика",
           "relatedTo": "i-i-s-postamat-логистика",
           "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СгенКод",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "сгенКод",
+              "caption": "Код",
+              "hidden": false,
+              "index": 10
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Код",
+          "name": "сгенКод",
+          "relatedTo": "i-i-s-postamat-сген-код",
+          "inverse": null
         }
       ],
       "hasMany": []

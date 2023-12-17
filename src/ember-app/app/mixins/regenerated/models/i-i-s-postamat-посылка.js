@@ -79,6 +79,9 @@ export let defineProjections = function (modelClass) {
       время: attr('Время', { index: 7, hidden: true }),
       оплата: attr('Оплата', { index: 8 }),
       сумма: attr('Сумма', { index: 9 })
-    }, { index: 3, displayMemberPath: 'время' })
+    }, { index: 3, displayMemberPath: 'время' }),
+    сгенКод: belongsTo('i-i-s-postamat-сген-код', 'Код', {
+      сгенКод: attr('Код', { index: 10 })
+    }, { index: -1, hidden: true })
   });
 };

@@ -35,21 +35,23 @@
     {{flexberry-validationmessage error=(v-get validationModel "сгенКод" "message")}}
   </div>
   <div class="field">
-    <label>{{t "forms.i-i-s-postamat-сген-код-e.пользователь-caption"}}</label>
-    {{flexberry-lookup
-      choose="showLookupDialog"
-      remove="removeLookupValue"
-      value=model.пользователь
-      displayAttributeName="фИО"
-      autocomplete=true
-      relationName="пользователь"
-      projection="ПользовательL"
-      title=(t "forms.i-i-s-postamat-сген-код-e.пользователь-caption")
-      readonly=readonly
-      componentName="пользовательLookup"
-      class=(if (v-get validationModel "пользователь" "isInvalid") "error")
-      data-test-i-i-s-postamat-сген-код-e-пользователь=true
+    {{flexberry-field
+      readonly=true
+      value=model.пользователь.фИО
+      class=(if (v-get validationModel.пользователь "фИО" "isInvalid") "error")
+      label=(t "forms.i-i-s-postamat-сген-код-e.пользователь.фИО-caption")
+      data-test-i-i-s-postamat-сген-код-e-пользователь-фИО=true
     }}
-    {{flexberry-validationmessage error=(v-get validationModel "пользователь" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel.пользователь "фИО" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.пользователь.номерТелефона
+      class=(if (v-get validationModel.пользователь "номерТелефона" "isInvalid") "error")
+      label=(t "forms.i-i-s-postamat-сген-код-e.пользователь.номерТелефона-caption")
+      data-test-i-i-s-postamat-сген-код-e-пользователь-номерТелефона=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.пользователь "номерТелефона" "message")}}
   </div>
 </form>

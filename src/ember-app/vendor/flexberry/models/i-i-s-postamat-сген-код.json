@@ -40,8 +40,8 @@
       ],
       "belongsTo": [
         {
-          "lookupValue": "ФИО",
-          "lookupValueField": "фИО",
+          "lookupValue": null,
+          "lookupValueField": null,
           "relationName": "Пользователь",
           "belongsTo": [],
           "hidden": false,
@@ -49,13 +49,19 @@
             {
               "name": "фИО",
               "caption": "ФИО",
-              "hidden": true,
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "номерТелефона",
+              "caption": "Номер телефона",
+              "hidden": false,
               "index": 2
             }
           ],
-          "index": 1,
-          "type": "standard",
-          "caption": "Пользователь",
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
           "name": "пользователь",
           "relatedTo": "i-i-s-postamat-пользователь",
           "inverse": null
