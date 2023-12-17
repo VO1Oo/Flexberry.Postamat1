@@ -1,0 +1,181 @@
+﻿{
+  "name": "IISPostamatПосылка",
+  "modelName": "i-i-s-postamat-посылка",
+  "className": "Посылка",
+  "nameSpace": "IIS.Postamat",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номерПостамата",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерПосылки",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерЯчейки",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "логистика",
+      "relatedTo": "i-i-s-postamat-логистика",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сгенКод",
+      "relatedTo": "i-i-s-postamat-сген-код",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "транзакция",
+      "relatedTo": "i-i-s-postamat-транзакция",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "хранение",
+      "relatedTo": "i-i-s-postamat-хранение",
+      "inverse": "посылка"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПосылкаE",
+      "modelName": "i-i-s-postamat-посылка",
+      "attrs": [
+        {
+          "name": "номерПостамата",
+          "caption": "Номер постамата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерПосылки",
+          "caption": "Номер посылки",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "номерЯчейки",
+          "caption": "Номер ячейки",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Время",
+          "lookupValueField": "время",
+          "relationName": "Транзакция",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": false,
+              "index": 6
+            },
+            {
+              "name": "время",
+              "caption": "Время",
+              "hidden": true,
+              "index": 7
+            },
+            {
+              "name": "оплата",
+              "caption": "Оплата",
+              "hidden": false,
+              "index": 8
+            },
+            {
+              "name": "сумма",
+              "caption": "Сумма",
+              "hidden": false,
+              "index": 9
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Транзакция",
+          "name": "транзакция",
+          "relatedTo": "i-i-s-postamat-транзакция",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Номер",
+          "lookupValueField": "номер",
+          "relationName": "Логистика",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номер",
+              "caption": "Номер",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Логистика",
+          "name": "логистика",
+          "relatedTo": "i-i-s-postamat-логистика",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СгенКод",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [
+            {
+              "name": "сгенКод",
+              "caption": "Сгенерировать код",
+              "hidden": true,
+              "index": 10
+            }
+          ],
+          "index": 11,
+          "type": "default",
+          "caption": "Сгенерировать код",
+          "name": "сгенКод",
+          "relatedTo": "i-i-s-postamat-сген-код",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

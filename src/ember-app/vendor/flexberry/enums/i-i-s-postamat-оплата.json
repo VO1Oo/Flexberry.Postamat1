@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Postamat",
+  "className": "Оплата",
+  "enumObjects": {
+    "1": "Оплачено",
+    "2": "Ожидает оплаты"
+  }
+}

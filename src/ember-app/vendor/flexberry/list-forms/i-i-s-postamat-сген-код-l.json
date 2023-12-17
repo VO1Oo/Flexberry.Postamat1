@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-postamat-сген-код-e",
+  "editForm": "i-i-s-postamat-сген-код-e",
+  "external": false,
+  "caption": "Сген код",
+  "name": "IISPostamatСгенКодL",
+  "className": "СгенКодL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-postamat-сген-код",
+      "modelProjection": "СгенКодL"
+    }
+  ]
+}

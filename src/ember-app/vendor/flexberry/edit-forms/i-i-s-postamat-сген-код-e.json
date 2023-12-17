@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Пользователь",
+      "projection": "ПользовательL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Сген код",
+  "name": "IISPostamatСгенКодE",
+  "className": "СгенКодE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-postamat-сген-код",
+      "modelProjection": "СгенКодE"
+    }
+  ]
+}

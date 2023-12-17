@@ -1,0 +1,106 @@
+﻿{
+  "name": "IISPostamatСгенКод",
+  "modelName": "i-i-s-postamat-сген-код",
+  "className": "СгенКод",
+  "nameSpace": "IIS.Postamat",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "сгенКод",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "пользователь",
+      "relatedTo": "i-i-s-postamat-пользователь",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СгенКодE",
+      "modelName": "i-i-s-postamat-сген-код",
+      "attrs": [
+        {
+          "name": "сгенКод",
+          "caption": "Сген код",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Пользователь",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Пользователь",
+          "name": "пользователь",
+          "relatedTo": "i-i-s-postamat-пользователь",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СгенКодL",
+      "modelName": "i-i-s-postamat-сген-код",
+      "attrs": [
+        {
+          "name": "сгенКод",
+          "caption": "Сген код",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Пользователь",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "пользователь",
+          "relatedTo": "i-i-s-postamat-пользователь",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
