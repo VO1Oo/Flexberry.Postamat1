@@ -28,19 +28,19 @@ export default Controller.extend({
             link: 'i-i-s-postamat-хранение-l',
             caption: i18n.t('forms.application.sitemap.postamat.i-i-s-postamat-хранение-l.caption'),
             title: i18n.t('forms.application.sitemap.postamat.i-i-s-postamat-хранение-l.title'),
-            icon: 'list',
+            icon: 'chart line',
             children: null
           }, {
             link: 'i-i-s-postamat-пользователь-l',
             caption: i18n.t('forms.application.sitemap.postamat.i-i-s-postamat-пользователь-l.caption'),
             title: i18n.t('forms.application.sitemap.postamat.i-i-s-postamat-пользователь-l.title'),
-            icon: 'paperclip',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-postamat-адрес-l',
             caption: i18n.t('forms.application.sitemap.postamat.i-i-s-postamat-адрес-l.caption'),
             title: i18n.t('forms.application.sitemap.postamat.i-i-s-postamat-адрес-l.title'),
-            icon: 'paperclip',
+            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-postamat-логистика-l',
@@ -51,25 +51,25 @@ export default Controller.extend({
             link: 'i-i-s-postamat-транзакция-l',
             caption: i18n.t('forms.application.sitemap.postamat.i-i-s-postamat-транзакция-l.caption'),
             title: i18n.t('forms.application.sitemap.postamat.i-i-s-postamat-транзакция-l.title'),
-            icon: 'book',
+            icon: 'chart line',
             children: null
           }, {
             link: 'i-i-s-postamat-служба-доставки-l',
             caption: i18n.t('forms.application.sitemap.postamat.i-i-s-postamat-служба-доставки-l.caption'),
             title: i18n.t('forms.application.sitemap.postamat.i-i-s-postamat-служба-доставки-l.title'),
-            icon: 'book',
+            icon: 'address card',
             children: null
           }, {
             link: 'i-i-s-postamat-постамат-l',
             caption: i18n.t('forms.application.sitemap.postamat.i-i-s-postamat-постамат-l.caption'),
             title: i18n.t('forms.application.sitemap.postamat.i-i-s-postamat-постамат-l.title'),
-            icon: 'file',
+            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-postamat-сген-код-l',
             caption: i18n.t('forms.application.sitemap.postamat.i-i-s-postamat-сген-код-l.caption'),
             title: i18n.t('forms.application.sitemap.postamat.i-i-s-postamat-сген-код-l.title'),
-            icon: 'file',
+            icon: 'folder',
             children: null
           }]
         }

@@ -31,18 +31,6 @@ export default EditFormController.extend({
           };
           break;
 
-        case 'i-i-s-postamat-посылка+сгенКод':
-          cellComponent.componentProperties = {
-            choose: 'showLookupDialog',
-            remove: 'removeLookupValue',
-            displayAttributeName: '',
-            required: true,
-            relationName: 'сгенКод',
-            projection: 'СгенКодL',
-            autocomplete: true,
-          };
-          break;
-
       }
     }
 

@@ -15,14 +15,6 @@
       "relationName": "Посылка.Логистика",
       "projection": "ЛогистикаL",
       "detailModelName": "i-i-s-postamat-посылка"
-    },
-    {
-      "master": "сгенКод",
-      "displayAttributeName": null,
-      "required": true,
-      "relationName": "Посылка.СгенКод",
-      "projection": "СгенКодL",
-      "detailModelName": "i-i-s-postamat-посылка"
     }
   ],
   "external": false,

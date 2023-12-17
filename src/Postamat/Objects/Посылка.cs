@@ -39,14 +39,11 @@ namespace IIS.Postamat
             "Транзакция.Время as \'Время\'",
             "Транзакция.Оплата as \'Оплата\'",
             "Транзакция.Сумма as \'Сумма\'",
-            "СгенКод.СгенКод as \'Сгенерировать код\'",
-            "СгенКод as \'Сгенерировать код\'"}, Hidden=new string[] {
+            "СгенКод.СгенКод as \'Код\'"}, Hidden=new string[] {
             "Логистика.Номер",
-            "Транзакция.Время",
-            "СгенКод.СгенКод"})]
+            "Транзакция.Время"})]
     [MasterViewDefineAttribute("ПосылкаE", "Транзакция", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Время")]
     [MasterViewDefineAttribute("ПосылкаE", "Логистика", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Номер")]
-    [MasterViewDefineAttribute("ПосылкаE", "СгенКод", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "СгенКод")]
     public class Посылка : ICSSoft.STORMNET.DataObject
     {
         
