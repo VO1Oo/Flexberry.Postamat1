@@ -61,7 +61,7 @@ export let defineProjections = function (modelClass) {
         сумма: attr('Сумма', { index: 9 })
       }, { index: 3, displayMemberPath: 'время' }),
       сгенКод: belongsTo('i-i-s-postamat-сген-код', 'Код', {
-        сгенКод: attr('Код', { index: 10 })
+        сгенКод: attr('Код', { index: 10, hidden: true })
       }, { index: -1, hidden: true })
     })
   });

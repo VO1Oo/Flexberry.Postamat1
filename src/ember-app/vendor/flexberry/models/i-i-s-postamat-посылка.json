@@ -155,12 +155,12 @@
           "lookupValueField": null,
           "relationName": "СгенКод",
           "belongsTo": [],
-          "hidden": false,
+          "hidden": true,
           "attrs": [
             {
               "name": "сгенКод",
               "caption": "Код",
-              "hidden": false,
+              "hidden": true,
               "index": 10
             }
           ],

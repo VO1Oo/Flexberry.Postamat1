@@ -34,39 +34,11 @@
         {
           "name": "сгенКод",
           "caption": "Сген код",
-          "hidden": false,
+          "hidden": true,
           "index": 0
         }
       ],
-      "belongsTo": [
-        {
-          "lookupValue": null,
-          "lookupValueField": null,
-          "relationName": "Пользователь",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "фИО",
-              "caption": "ФИО",
-              "hidden": false,
-              "index": 1
-            },
-            {
-              "name": "номерТелефона",
-              "caption": "Номер телефона",
-              "hidden": false,
-              "index": 2
-            }
-          ],
-          "index": -1,
-          "type": "default",
-          "caption": "ФИО",
-          "name": "пользователь",
-          "relatedTo": "i-i-s-postamat-пользователь",
-          "inverse": null
-        }
-      ],
+      "belongsTo": [],
       "hasMany": []
     },
     {

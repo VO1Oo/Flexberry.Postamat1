@@ -30,9 +30,8 @@ namespace IIS.Postamat
     [Caption("Сген код")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("СгенКодE", new string[] {
-            "СгенКод as \'Сген код\'",
-            "Пользователь.ФИО as \'ФИО\'",
-            "Пользователь.НомерТелефона as \'Номер телефона\'"})]
+            "СгенКод as \'Сген код\'"}, Hidden=new string[] {
+            "СгенКод"})]
     [View("СгенКодL", new string[] {
             "СгенКод as \'Сген код\'",
             "Пользователь.ФИО as \'ФИО\'"})]

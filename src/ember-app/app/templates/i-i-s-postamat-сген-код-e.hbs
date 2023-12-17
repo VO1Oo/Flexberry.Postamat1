@@ -24,34 +24,5 @@
       {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
     </div>
   </div>
-  <div class="field">
-    {{flexberry-field
-      readonly=readonly
-      value=model.сгенКод
-      class=(if (v-get validationModel "сгенКод" "isInvalid") "error")
-      label=(t "forms.i-i-s-postamat-сген-код-e.сгенКод-caption")
-      data-test-i-i-s-postamat-сген-код-e-сгенКод=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel "сгенКод" "message")}}
-  </div>
-  <div class="field">
-    {{flexberry-field
-      readonly=true
-      value=model.пользователь.фИО
-      class=(if (v-get validationModel.пользователь "фИО" "isInvalid") "error")
-      label=(t "forms.i-i-s-postamat-сген-код-e.пользователь.фИО-caption")
-      data-test-i-i-s-postamat-сген-код-e-пользователь-фИО=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel.пользователь "фИО" "message")}}
-  </div>
-  <div class="field">
-    {{flexberry-field
-      readonly=true
-      value=model.пользователь.номерТелефона
-      class=(if (v-get validationModel.пользователь "номерТелефона" "isInvalid") "error")
-      label=(t "forms.i-i-s-postamat-сген-код-e.пользователь.номерТелефона-caption")
-      data-test-i-i-s-postamat-сген-код-e-пользователь-номерТелефона=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel.пользователь "номерТелефона" "message")}}
-  </div>
+
 </form>
